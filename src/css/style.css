@@ -1,25 +1,3 @@
-@font-face {
-  font-family: "Open_Sans";
-  src: url(../fonts/OpenSans-Regular.ttf);
-}
-body {
-  font-family: "Open_Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-}
-
-.container {
-  max-width: 970px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-p {
-  color: #676770;
-  line-height: 1.8;
-}
-
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -41,6 +19,28 @@ p {
 }
 .header__navigation li + li {
   margin-left: 40px;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+body {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.container {
+  max-width: 970px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+p {
+  color: #676770;
+  line-height: 1.8;
 }
 
 .logotip {
