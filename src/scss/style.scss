@@ -1,1 +1,66 @@
-@import "../scss/reset";
+@import "./variables";
+
+
+@font-face {
+  font-family: "Open_Sans";
+  src: url(../fonts/OpenSans-Regular.ttf)
+}
+
+body{
+	font-family: 'Open_Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	font-style: normal;
+}
+
+.container{
+	// max width 940 + padding 15*2 (box-sizing: border-box)
+	max-width: 970px; 
+	padding: 0 15px;
+	// element centering
+	margin: 0 auto;
+}
+
+p {
+	color: #676770;
+	line-height: 1.8;
+}
+
+.header{
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__navigation{
+		& a{
+			font-size: 16px;
+			color: $textColorLinkGrey;
+			transition: color 0.5s;
+
+			&:hover{
+				color: $textColorBlue;
+			}
+
+			&:active{
+				color: #003a6c;
+			}
+		}
+		
+		& ul{
+			display: flex;
+		}
+
+		& li +li{
+			margin-left: 40px;
+		}
+	}
+}
+
+.logotip{
+	font-size: 25px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: $textColorBlue;
+}
